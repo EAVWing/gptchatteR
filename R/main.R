@@ -159,7 +159,7 @@ chatter.create <- function(model = "text-davinci-003",
       chatter.feed(input)
       response <- openai::create_completion(
         prompt = chatter$input,
-        engine_id = chatter$model,
+        model = chatter$model,
         temperature = chatter$temperature,
         max_tokens = chatter$max_tokens,
         echo = echo
